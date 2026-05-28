@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hibana</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="chat-app" aria-label="Hibana AI companion">
+      <aside class="companion-panel">
+        <div>
+          <p class="eyebrow">Anhedonia companion</p>
+          <h1>Hibana</h1>
+          <p>
+            A chat-first space for rebuilding past interests through tiny, adaptive steps.
+          </p>
+        </div>
+
+        <div class="bear-scene" aria-label="Animated bear holding a heart" role="img">
+          <div class="bear">
+            <span class="ear left"></span>
+            <span class="ear right"></span>
+            <span class="face"></span>
+            <span class="eye left"></span>
+            <span class="eye right"></span>
+            <span class="nose"></span>
+            <span class="arm left"></span>
+            <span class="arm right"></span>
+            <span class="heart"></span>
+          </div>
+        </div>
+
+        <div class="activity-stage" id="activity-stage" aria-live="polite">
+          <span class="stage-label">Activity animation</span>
+          <div class="stage-visual calm-spark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <strong>Choose an activity</strong>
+        </div>
+
+        <div class="profile-card" id="profile-card">
+          <span>Getting started</span>
+          <strong>Name and country first</strong>
+        </div>
+
+        <button class="ghost-button" type="button" id="restart-app">Restart chat</button>
+      </aside>
+
+      <section class="chat-shell">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">AI-style guide</p>
+            <h2>Talk to Hibana</h2>
+          </div>
+          <span class="privacy-pill">Private in this browser</span>
+        </header>
+
+        <div class="chat-log" id="chat-log" aria-live="polite"></div>
+
+        <div class="quick-actions" id="quick-actions" aria-label="Quick replies"></div>
+
+        <form class="chat-form" id="chat-form">
+          <input
+            type="text"
+            id="chat-input"
+            maxlength="240"
+            placeholder="Type here..."
+            autocomplete="off"
+          />
+          <button class="primary-button" type="submit">Send</button>
+        </form>
+
+        <footer>
+          Hibana is not a therapist, diagnosis, or emergency service. If you might harm
+          yourself or someone else, contact local emergency services now.
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
